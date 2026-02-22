@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background-color: #f69837;
+  --text-color: #000000;
+  --primary-color: #f69837;
+  --secondary-color: #2166b7;
+  --font-family: "Poppins", sans-serif;
+  --bs-border-radius: 50px !important;
+}
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.primaryColor {
+  background-color: var(--primary-color) !important;
+}
+.secondaryColor {
+  color: var(--secondary-color) !important;
+}
+.textColor {
+  color: var(--text-color) !important;
+  font-size: 14px !important;
+}
+.homeBgImage {
+  background: url("./assets/images/bgcolorImage.png") !important;
+}
+.coursesBg {
+  background: linear-gradient(to bottom, #ffffff 0%, #2166b7 100%) !important;
+}
+.coursesBgImage {
+  background: url("./assets/images/courseBgImage.png") !important;
+}
+.textFont {
+  font-family: "Jomhuria", serif !important;
+}
+@media (max-width: 767px) {
+  .coursesBgImage {
+    background: none !important;
+  }
+}
+@media (max-width: 412px){
+  #choose{
+   font-size: 1.75rem;  /* ~28px */
+  line-height: 1.2;
+  font-weight: 700;
+    
+  }
+}
+
+.card-styling{
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.card-styling:hover{
+  background-color: #2166B7;
+  transition: 0.3s all ease-in-out;
+  padding: 5px 0px;
+  border-radius: 5px;
+  color: white;
+}
+
